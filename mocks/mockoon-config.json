@@ -1,0 +1,175 @@
+{
+  "uuid": "a64b461c-3d36-49d8-af9b-f8f959f44aa6",
+  "lastMigration": 33,
+  "name": "Pokemon Quiz Mock API - Enhanced Edition",
+  "endpointPrefix": "",
+  "latency": 100,
+  "port": 3001,
+  "hostname": "localhost",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "9bd0adcf-005b-44d1-a562-41716e51110f",
+      "type": "http",
+      "documentation": "Get Pokemon by ID with realistic data",
+      "method": "get",
+      "endpoint": "pokemon/:id",
+      "responses": [
+        {
+          "uuid": "8c22652d-9542-4970-80d0-3346e94d0f1c",
+          "body": "{{#switch (urlParam 'id')}}\n{{#case '1'}}\n{\n  \"id\": 1,\n  \"name\": \"bulbasaur\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"grass\"}},\n    {\"type\": {\"name\": \"poison\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 45},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 49},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 49},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 45}\n  ]\n}\n{{/case}}\n{{#case '4'}}\n{\n  \"id\": 4,\n  \"name\": \"charmander\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"fire\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 39},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 52},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 43},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 60},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 65}\n  ]\n}\n{{/case}}\n{{#case '7'}}\n{\n  \"id\": 7,\n  \"name\": \"squirtle\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"water\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 44},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 48},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 64},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 43}\n  ]\n}\n{{/case}}\n{{#case '25'}}\n{\n  \"id\": 25,\n  \"name\": \"pikachu\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"electric\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 35},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 55},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 40},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 90}\n  ]\n}\n{{/case}}\n{{#case '150'}}\n{\n  \"id\": 150,\n  \"name\": \"mewtwo\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"psychic\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 106},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 110},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 90},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 154},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 90},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 130}\n  ]\n}\n{{/case}}\n{{#case '6'}}\n{\n  \"id\": 6,\n  \"name\": \"charizard\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"fire\"}},\n    {\"type\": {\"name\": \"flying\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 78},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 84},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 78},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 109},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 85},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 100}\n  ]\n}\n{{/case}}\n{{#case '133'}}\n{\n  \"id\": 133,\n  \"name\": \"eevee\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/133.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"normal\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 55},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 55},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 45},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 55}\n  ]\n}\n{{/case}}\n{{#case '143'}}\n{\n  \"id\": 143,\n  \"name\": \"snorlax\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/143.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"normal\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 160},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 110},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 110},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 30}\n  ]\n}\n{{/case}}\n{{#case '94'}}\n{\n  \"id\": 94,\n  \"name\": \"gengar\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/94.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"ghost\"}},\n    {\"type\": {\"name\": \"poison\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 60},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 60},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 130},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 75},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 110}\n  ]\n}\n{{/case}}\n{{#case '149'}}\n{\n  \"id\": 149,\n  \"name\": \"dragonite\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/149.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"dragon\"}},\n    {\"type\": {\"name\": \"flying\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 91},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 134},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 95},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 100},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 100},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 80}\n  ]\n}\n{{/case}}\n{{#default}}\n{\n  \"id\": {{urlParam 'id'}},\n  \"name\": \"pokemon-{{urlParam 'id'}}\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{urlParam 'id'}}.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{urlParam 'id'}}.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{{urlParam 'id'}}.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"normal\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 50}\n  ]\n}\n{{/default}}\n{{/switch}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "3209662c-45a7-4122-a1b8-78d8dd11d554",
+      "type": "http",
+      "documentation": "Get Pokemon by name",
+      "method": "get",
+      "endpoint": "pokemon/:name",
+      "responses": [
+        {
+          "uuid": "58b5c0f9-3aa1-4236-a802-ccce848dac11",
+          "body": "{{#switch (urlParam 'name')}}\n{{#case 'pikachu'}}\n{\n  \"id\": 25,\n  \"name\": \"pikachu\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"electric\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 35},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 55},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 40},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 90}\n  ]\n}\n{{/case}}\n{{#case 'bulbasaur'}}\n{\n  \"id\": 1,\n  \"name\": \"bulbasaur\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"grass\"}},\n    {\"type\": {\"name\": \"poison\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 45},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 49},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 49},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 65},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 45}\n  ]\n}\n{{/case}}\n{{#default}}\n{\n  \"id\": 999,\n  \"name\": \"{{urlParam 'name'}}\",\n  \"sprites\": {\n    \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png\",\n    \"other\": {\n      \"official-artwork\": {\n        \"front_default\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png\"\n      }\n    }\n  },\n  \"cries\": {\n    \"latest\": \"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/999.ogg\"\n  },\n  \"types\": [\n    {\"type\": {\"name\": \"normal\"}}\n  ],\n  \"stats\": [\n    {\"stat\": {\"name\": \"hp\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-attack\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"special-defense\"}, \"base_stat\": 50},\n    {\"stat\": {\"name\": \"speed\"}, \"base_stat\": 50}\n  ]\n}\n{{/default}}\n{{/switch}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "18722246-9f38-4e2e-84fa-e5f87c351b25",
+      "type": "http",
+      "documentation": "Get Pokemon list with pagination",
+      "method": "get",
+      "endpoint": "pokemon",
+      "responses": [
+        {
+          "uuid": "b5d5ca52-86ff-4236-9394-6360156edeaf",
+          "body": "{\n  \"count\": 1025,\n  \"next\": \"http://localhost:3001/pokemon?offset={{add (queryParam 'offset') (queryParam 'limit')}}&limit={{queryParam 'limit'}}\",\n  \"previous\": null,\n  \"results\": [\n    {\"name\": \"bulbasaur\", \"url\": \"http://localhost:3001/pokemon/1/\"},\n    {\"name\": \"ivysaur\", \"url\": \"http://localhost:3001/pokemon/2/\"},\n    {\"name\": \"venusaur\", \"url\": \"http://localhost:3001/pokemon/3/\"},\n    {\"name\": \"charmander\", \"url\": \"http://localhost:3001/pokemon/4/\"},\n    {\"name\": \"charmeleon\", \"url\": \"http://localhost:3001/pokemon/5/\"},\n    {\"name\": \"charizard\", \"url\": \"http://localhost:3001/pokemon/6/\"},\n    {\"name\": \"squirtle\", \"url\": \"http://localhost:3001/pokemon/7/\"},\n    {\"name\": \"wartortle\", \"url\": \"http://localhost:3001/pokemon/8/\"},\n    {\"name\": \"blastoise\", \"url\": \"http://localhost:3001/pokemon/9/\"},\n    {\"name\": \"caterpie\", \"url\": \"http://localhost:3001/pokemon/10/\"}\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "9bd0adcf-005b-44d1-a562-41716e51110f"
+    },
+    {
+      "type": "route",
+      "uuid": "3209662c-45a7-4122-a1b8-78d8dd11d554"
+    },
+    {
+      "type": "route",
+      "uuid": "18722246-9f38-4e2e-84fa-e5f87c351b25"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

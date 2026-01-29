@@ -1,0 +1,98 @@
+.multiple-choice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.choice-button {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: white;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #2c3e50;
+  text-transform: capitalize;
+}
+
+.choice-button:hover:not(:disabled) {
+  background-color: #f8f9fa;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.choice-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.choice-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.choice-button.selected {
+  border-width: 4px;
+  transform: scale(1.05);
+}
+
+.choice-button.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+  animation: correct-pulse 0.5s ease;
+}
+
+.choice-button.selected.correct {
+  background-color: #28a745;
+  color: white;
+  border-color: #1e7e34;
+}
+
+.choice-button.wrong {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.choice-button.selected.wrong {
+  background-color: #dc3545;
+  color: white;
+  border-color: #bd2130;
+  animation: shake 0.5s ease;
+}
+
+@keyframes correct-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 600px) {
+  .multiple-choice {
+    grid-template-columns: 1fr;
+  }
+}

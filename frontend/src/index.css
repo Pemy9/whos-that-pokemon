@@ -1,0 +1,138 @@
+/* Pokemon Fonts */
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('./assets/fonts/pokemon/Pokemon Solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pokemon Hollow';
+  src: url('./assets/fonts/pokemon/Pokemon Hollow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--pokeball-black);
+  background-color: #f5f7fa;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(102, 126, 234, 0.05) 35px,
+    rgba(102, 126, 234, 0.05) 70px
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Pokemon Official Colors */
+  /* Primary Pokemon Colors */
+  --pokemon-yellow: #ffcb05;
+  --pokemon-blue: #3d7dca;
+  --pokemon-blue-dark: #2a75bb;
+
+  /* Type Colors */
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-electric: #f8d030;
+  --type-grass: #78c850;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
+  --type-ghost: #705898;
+  --type-dragon: #7038f8;
+  --type-dark: #705848;
+  --type-steel: #b8b8d0;
+  --type-fairy: #ee99ac;
+
+  /* UI Colors */
+  --pokeball-red: #ee1515;
+  --pokeball-white: #f0f0f0;
+  --pokeball-black: #222224;
+
+  /* Game UI Colors */
+  --health-green: #78c850;
+  --health-yellow: #f8d030;
+  --health-red: #f08030;
+
+  /* Background Colors */
+  --bg-light: #f5f5f5;
+  --bg-card: #ffffff;
+  --bg-dark: #2c2c2c;
+
+  /* Accent Colors */
+  --accent-purple: #764ba2;
+  --accent-pink: #f953c6;
+  --accent-orange: #fa8231;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  filter: brightness(0.95);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.primary-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: var(--pokeball-red);
+  border: 2px solid var(--pokeball-black);
+}
+
+.secondary-button {
+  padding: 0.5rem 1rem;
+  color: var(--pokeball-black);
+  background: var(--pokeball-white);
+  border: 2px solid var(--pokeball-black);
+}

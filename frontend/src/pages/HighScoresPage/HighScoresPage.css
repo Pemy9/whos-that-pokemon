@@ -1,0 +1,60 @@
+.highscores-container {
+  padding: 2rem;
+}
+
+.highscores-title {
+  margin-bottom: 2rem;
+}
+
+.highscores-title__image {
+  max-width: 70px;
+  height: auto;
+}
+
+.scores-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+.table-header {
+  border-bottom: 2px solid #333;
+}
+
+.table-header-cell {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table-header-cell.right {
+  text-align: right;
+}
+
+.table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 0.75rem;
+}
+
+.table-cell.rank {
+  font-weight: bold;
+}
+
+.table-cell.right {
+  text-align: right;
+}
+
+.empty-state {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.button-group {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
