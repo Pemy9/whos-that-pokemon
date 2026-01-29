@@ -14,12 +14,14 @@ A full-stack Pokemon quiz game built with React, TypeScript, GraphQL, and Apollo
 ## 🏗️ Tech Stack
 
 ### Backend
+
 - **Node.js** with **TypeScript**
 - **Apollo Server** (GraphQL)
 - **PokeAPI** integration
 - File-based score storage (JSON)
 
 ### Frontend
+
 - **React 19** with **TypeScript**
 - **Apollo Client** (GraphQL)
 - **React Router** for navigation
@@ -27,7 +29,7 @@ A full-stack Pokemon quiz game built with React, TypeScript, GraphQL, and Apollo
 
 ## 📋 Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ## 🚀 Getting Started
@@ -142,17 +144,17 @@ pokemon-quiz-game/
 
 ### Backend (.env)
 
-| Variable | Description | Default |
-|----------|-------------|----------|
-| `PORT` | Server port | `4000` |
-| `API_MODE` | API mode (`real` or `mockoon`) | `real` |
-| `MOCKOON_API_URL` | Mockoon server URL | `http://localhost:3001` |
-| `NODE_ENV` | Environment (`development` or `production`) | `development` |
+| Variable          | Description                                 | Default                 |
+| ----------------- | ------------------------------------------- | ----------------------- |
+| `PORT`            | Server port                                 | `4000`                  |
+| `API_MODE`        | API mode (`real` or `mockoon`)              | `real`                  |
+| `MOCKOON_API_URL` | Mockoon server URL                          | `http://localhost:3001` |
+| `NODE_ENV`        | Environment (`development` or `production`) | `development`           |
 
 ### Frontend (.env)
 
-| Variable | Description | Default |
-|----------|-------------|----------|
+| Variable           | Description          | Default                         |
+| ------------------ | -------------------- | ------------------------------- |
 | `VITE_GRAPHQL_URL` | GraphQL API endpoint | `http://localhost:4000/graphql` |
 
 ## 🧪 Testing with Mockoon
@@ -220,10 +222,6 @@ saveScore(name: String!, score: Int!): UserScore!
 ## 📝 License
 
 MIT
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
